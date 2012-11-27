@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--- Status bar transparency -->
+    <string name="statusbar_transparency">Status bar transparency</string>
+    <string name="statusbar_transparency_summary">Warning: turning on status bar transparency might affect performance and battery life</string>
+    <string name="statusbar_transparency_no">No transparency</string>
+    <string name="statusbar_transparency_25">25%</string>
+    <string name="statusbar_transparency_50">50%</string>
+    <string name="statusbar_transparency_75">75%</string>
+    <string name="statusbar_transparency_full">Full transparency</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--- Status bar transparency -->
+    <string-array name="statusbar_transparency_entries">
+        <item>@string/statusbar_transparency_no</item>
+        <item>@string/statusbar_transparency_25</item>
+        <item>@string/statusbar_transparency_50</item>
+        <item>@string/statusbar_transparency_75</item>
+        <item>@string/statusbar_transparency_full</item>
+    </string-array>
+
+    <string-array name="statusbar_transparency_values">
+        <item>100</item>
+        <item>75</item>
+        <item>50</item>
+        <item>25</item>
+        <item>0</item>
+    </string-array>
+</resources>
