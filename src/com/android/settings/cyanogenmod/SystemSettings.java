@@ -23,9 +23,11 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.IWindowManager;
 
@@ -41,8 +43,10 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_NOTIFICATION_DRAWER_TABLET = "notification_drawer_tablet";
     private static final String KEY_NAVIGATION_BAR = "navigation_bar";
+    private static final String SHOW_NAVBAR = "show_navbar";
 
     private ListPreference mFontSizePref;
+    private CheckBoxPreference mShowNavbar;
 
     private final Configuration mCurConfig = new Configuration();
     
@@ -66,6 +70,11 @@ public class SystemSettings extends SettingsPreferenceFragment implements
             }
         } catch (RemoteException e) {
         }
+
+        mShowNavbar = (CheckBoxPreference) findPreference(SHOW_NAVBAR);
+        mShowNavbar.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                SHOW_NAVBAR, 0) == 1);
+
     }
 
     int floatToIndex(float val) {
@@ -126,6 +135,11 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mShowNavbar) {
+            Settings.System.putInt(getContentResolver(), SystemSettings.SHOW_NAVBAR,
+                    mShowNavbar.isChecked() ? 1 : 0);
+            return true;
+        }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
