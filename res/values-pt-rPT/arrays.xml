@@ -289,6 +289,8 @@
   <string-array name="entries_status_bar_battery">
     <item>Ícone (omissão)</item>
     <item>Percentagem</item>
+    <item>Círculo</item>
+    <item>Círculo Percentagem</item>
     <item>Oculto</item>
   </string-array>
   <string-array name="pref_zram_size_entries">

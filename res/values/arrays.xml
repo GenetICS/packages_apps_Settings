@@ -952,6 +952,8 @@
     <string-array name="entries_status_bar_battery">
         <item>Icon (default)</item>
         <item>Percentage</item>
+        <item>Circle</item>
+        <item>Circle with percentage</item>
         <item>Hidden</item>
     </string-array>
 
@@ -959,6 +961,8 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
      <string-array name="entries_status_bar_signal" translatable="false">

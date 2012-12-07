@@ -364,6 +364,8 @@
     <string-array name="entries_status_bar_battery">
         <item>아이콘 (기본값)</item>
         <item>퍼센트</item>
+        <item>원</item>
+        <item>원 퍼센트</item>
         <item>숨겨짐</item>
     </string-array>
 

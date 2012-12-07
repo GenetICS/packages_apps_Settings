@@ -360,6 +360,8 @@
   <string-array name="entries_status_bar_battery">
       <item>Ikona (Domyślnie)</item>
       <item>Procent</item>
+      <item>Koło</item>
+      <item>Koło Procent</item>
       <item>Ukryty</item>
   </string-array>
 

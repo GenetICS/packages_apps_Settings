@@ -351,6 +351,8 @@
     <string-array name="entries_status_bar_battery">
         <item>Иконка (по умолчанию)</item>
         <item>Процентный</item>
+        <item>Kруг</item>
+        <item>Kруг Процентный</item>
         <item>Скрытый</item>
     </string-array>
     <string-array name="location_entries_gps_source">

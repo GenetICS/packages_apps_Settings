@@ -367,6 +367,8 @@
   <string-array name="entries_status_bar_battery">
     <item>"סמל (ברירת מחדל)"</item>
     <item>אחוזים</item>
+    <item>חוג</item>
+    <item>חוג אחוזים</item>
     <item>נסתר</item>
   </string-array>
   <string-array name="lockscreen_delay_entries">

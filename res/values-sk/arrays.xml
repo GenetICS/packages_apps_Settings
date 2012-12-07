@@ -273,4 +273,11 @@
     <item msgid="4042143101664725090">"Časový limit vypršal"</item>
     <item msgid="7664124146786465092">"Neúspešné"</item>
   </string-array>
+  <string-array name="entries_status_bar_battery">
+    <item>Ikona (predvolené)</item>
+    <item>Percentá</item>
+    <item>Kruh</item>
+    <item>Kruh a percentá</item>
+    <item>Skryť</item>
+  </string-array>
 </resources>

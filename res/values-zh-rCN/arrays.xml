@@ -375,6 +375,8 @@
     <string-array name="entries_status_bar_battery">
         <item>图标(默认)</item>
         <item>百分比</item>
+        <item>圈</item>
+        <item>圈 百分比</item>
         <item>隐藏</item>
     </string-array>
     <string-array name="lockscreen_delay_entries">

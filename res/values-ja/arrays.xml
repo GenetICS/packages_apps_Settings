@@ -369,6 +369,8 @@
     <string-array name="entries_status_bar_battery">
         <item>アイコン(デフォルト)</item>
         <item>パーセンテージ</item>
+        <item>円形</item>
+        <item>円形 パーセンテージ</item>
         <item>非表示</item>
     </string-array>
 

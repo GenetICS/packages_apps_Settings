@@ -373,6 +373,8 @@
     <string-array name="entries_status_bar_battery">
         <item>Icono (defecto)</item>
         <item>Porcentaje</item>
+        <item>Círculo</item>
+        <item>Círculo Porcentaje</item>
         <item>Oculto</item>
     </string-array>
 
