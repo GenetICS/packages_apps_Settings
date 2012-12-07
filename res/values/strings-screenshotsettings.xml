@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Power-Off Menu Settings -->
+    <string name="power_off_menu_title">Power-off menu</string>
+    <string name="pom_screenshot_title">Screenshot</string>
+    <string name="pom_screenshot_sound_title">Screenshot sound</string>
+    <string name="pom_screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+    <string name="pom_screenshot_delay_title">Screenshot delay</string>
+    <string name="pom_screenshot_delay_summary">Delays shot by number of seconds specified</string>
+</resources>
