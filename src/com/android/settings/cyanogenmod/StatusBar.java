@@ -51,6 +51,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
 
+    private static final String STATUS_BAR_BOTTOM = "status_bar_bottom";
+
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
 
     private static final String STATUSBAR_TRANSPARENCY = "statusbar_transparency";
@@ -71,6 +73,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
     private CheckBoxPreference mStatusBarNotifCount;
 
+    private CheckBoxPreference mStatusBarBottom;
+
     private PreferenceCategory mPrefCategoryGeneral;
 
     private ListPreference mStatusbarTransparency;
@@ -90,6 +94,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
         mCombinedBarAutoHide = (CheckBoxPreference) prefSet.findPreference(COMBINED_BAR_AUTO_HIDE);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
+        mStatusBarBottom = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BOTTOM);
+
 
         mStatusBarClock.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
@@ -149,6 +155,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         if (Utils.isScreenLarge()) {
             mPrefCategoryGeneral.removePreference(mStatusBarBrightnessControl);
             mPrefCategoryGeneral.removePreference(mStatusBarCmSignal);
+            mPrefCategoryGeneral.removePreference(mStatusBarBottom);
         } else {
             mPrefCategoryGeneral.removePreference(mCombinedBarAutoHide);
         }
@@ -207,6 +214,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             value = mStatusBarNotifCount.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarBottom) {
+            value = mStatusBarBottom.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_BOTTOM, value ? 1 : 0);
             return true;
         }
         return false;
