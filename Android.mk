@@ -11,6 +11,8 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
 
+LOCAL_DEX_PREOPT := false
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include $(BUILD_PACKAGE)
