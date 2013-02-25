@@ -37,6 +37,17 @@
         android:title="@string/memory_management_title"
         android:summary="@string/memory_management_summary" />
 
+    <PreferenceScreen
+        android:key="hwa_settings"
+        android:title="@string/hwa_settings_title"
+        android:summary="@string/hwa_settings_summary"
+        android:persistent="false" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.settings.device.hwa"
+            android:targetClass="com.cyanogenmod.settings.device.hwa.HwaSettingsActivity" />
+    </PreferenceScreen>
+
     <CheckBoxPreference
         android:key="pref_use_16bpp_alpha"
         android:title="@string/pref_use_16bpp_alpha_title"

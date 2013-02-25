@@ -4182,6 +4182,10 @@ found in the list of installed apps.</string>
     <!-- UI debug setting: force hardware acceleration summary [CHAR LIMIT=50] -->
     <string name="force_hw_ui_summary">Use 2D hardware acceleration in applications</string>
 
+    <!-- Hardware rendering -->
+    <string name="hwa_settings_title">Hardware rendering</string>
+    <string name="hwa_settings_summary">Use hardware acceleration for selected applications</string>
+
     <!-- UI debug setting: scaling factor for window animations [CHAR LIMIT=25] -->
     <string name="window_animation_scale_title">Window animation scale</string>
 
